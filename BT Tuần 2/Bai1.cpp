@@ -1,21 +1,21 @@
 #include <iostream>
+
 using namespace std;
-long long sum(long long a)
-{
-    long long sum=(a*(a+1))/2;
-    return sum;
-}
+
 int main()
-{   long long n,s1=0,s=0;
-    int a[500000];
-    cin >> n;
-    for(int i=0;i<n-1;i++)
-    {
-        cin >> a[i];
-        s1=s1+a[i];
-    }
-       s=sum(n);
-        cout<<s-s1;
+{
+    int a,b;
+    cin>>a;
+    int d=a/4;
+    double c=a/100;
+    if(a%400==0 || (a%4==0 && a%100!=0))
+        		cout<<"0";
+    else if(a==c*100 && a%400!=0)
+                cout<<"4";
+    else if(a%4==0 && a%100==0 && a%400!=0)
+                cout<<(4*(d+1)-a);
+    else
+        		cout<<"0";
+
     return 0;
 }
-
