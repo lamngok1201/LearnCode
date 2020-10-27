@@ -7,8 +7,8 @@ int main()
         tam1 = Nam % 12;
         tam2 = Nam % 10;
     }else {
-        tam1 = (Nam%12)+13;
-        tam2 = (Nam%10)+11;
+        tam1 = ((Nam%12)+13)%12;
+        tam2 = ((Nam%10)+11)%10;
     }
     //xai switch-case se tien hon
     if(tam2 == 0) {
