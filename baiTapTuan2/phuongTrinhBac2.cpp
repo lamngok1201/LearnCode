@@ -17,7 +17,9 @@ int main(int argc, char** argv) {
 		(no2 == (-0))?(no2 = 0):(no2 = no2);
 		(no1>no2)?(cout <<"{"<<no2<<", "<<no1<<"}"):(cout <<"{"<<no1<<", "<<no2<<"}");
 	} else if(delta==0) {
-		cout << "{"<<-b / (2*a)<<"}";
+	    int no = -b / (2*a);
+	    (no == (-0))?(no = 0):(no = no);
+		cout << "{"<<no<<"}";
 	} else {
 		cout <<"Ø";
 	}
