@@ -1,12 +1,31 @@
+/*###Begin banned keyword - each of the following line if appear in code will raise error. regex supported
+define
+include
+using
+if
+for
+while
+switch
+?
+;
+###End banned keyword*/
 #include <iostream>
+
 using namespace std;
+
+
 int main()
 {
-    bool tre_trung, xinh_dep, giau_co, co_gau;
-    cin >> tre_trung >> xinh_dep >> co_gau >> giau_co;
-    cout <<(((tre_trung==xinh_dep)&&(xinh_dep==co_gau)&&(co_gau==1))
-    ||((xinh_dep==0)&&(co_gau==1)&&(giau_co==1)));
-    //(tre_trung==xinh_dep)&&(xinh_dep==co_gau)&&(co_gau==1)
-    // xinh_dep==0 && co_gau==1 && giau_co==1
+    cin.tie(NULL);
+    std::ios_base::sync_with_stdio(false);
+
+    bool tre,dep,loved,giau;
+    cin >> tre>>dep>>loved>>giau;
+
+    cout <<
+
+    ((tre==1 && dep==1 && loved==1)||(dep==0 && loved==1 && giau==loved))
+
+        << endl;
     return 0;
 }
