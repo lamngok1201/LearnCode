@@ -6,7 +6,7 @@ int main()
     if(Year>0){
         temp = Year % 12;
     }else {
-        temp = (Year%12)+13;
+        temp = ((Year%12)+13)%12;
     }
     //xai switch-case se tien hon
     if(temp == 0) {
